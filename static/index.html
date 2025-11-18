@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI News Channel</title>
+  <link rel="stylesheet" href="/static/channel.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <div class="logo">AI News Channel</div>
+      <div class="badge">←/↑ prev • →/↓ next • space skip</div>
+      <div style="flex:1"></div>
+      <div class="controls">
+        <label class="toggle">
+          <input id="speak" type="checkbox" checked /> Voice
+        </label>
+        <label class="toggle">
+          Auto&nbsp;
+          <select id="auto">
+            <option value="0">off</option>
+            <option value="10">10s</option>
+            <option value="20">20s</option>
+            <option value="30">30s</option>
+            <option value="45">45s</option>
+            <option value="60">60s</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="panel">
+        <h1 class="title">Loading…</h1>
+        <div class="meta">
+          <div class="source">—</div>
+          <div>•</div>
+          <div class="time">—</div>
+          <div>•</div>
+          <div class="sent">—</div>
+        </div>
+        <div class="summary"></div>
+      </div>
+
+      <div class="panel">
+        <div class="footer" style="margin-bottom:10px">
+          <div>Queue</div>
+          <div class="pos">0/0</div>
+        </div>
+        <div class="list"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <span class="kbd">↑/↓</span> or <span class="kbd">←/→</span> to change story.
+        <span class="kbd">space</span> to skip.
+      </div>
+      <a class="link readlink" href="#" target="_blank" rel="noopener">Open source article ↗</a>
+    </div>
+  </div>
+
+  <script src="/static/channel.js"></script>
+</body>
+</html>
+
