@@ -1,0 +1,3 @@
+__pycache__/
+*.pyc
+models/ # if your project has big files
